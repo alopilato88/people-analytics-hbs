@@ -32,9 +32,11 @@ Anyone have their own definition? Art?
 * PA Insights Team (Translator Pod for PAM)
 * Advanced Analytics & Data Science (Data science & ML Pods for PAM)^[Garbis, N. (2022). Blueprint for building a people analytics team [White paper]. One Model. https://www.onemodel.co/whitepapers/blueprint-pa-team]
 
-## Data Science + People Analytics = Behavioral Data Science
+# Data Science in People Analytics
 
->Behavioral Data Science is a new, emerging, interdisciplinary field, which combines techniques from the behavioral sciences, such as psychology, economics, sociology, and business, with computational approaches from computer science, statistics, data-centric engineering, information systems research and mathematics, all in order to better model, understand and predict behavior.^[Pogrebna, G. (2020). What is behavioral data science and how to get into it. *Medium*. https://medium.com/behavior-design-hub/what-is-behavioral-data-science-and-how-to-get-into-it-e389ed20751f]
+## Modeling People Is Hard 
+
+>Modeling people presents a challenge because while models require low-dimensional representations, people defy simple characterizations. People are *diverse*, we are *socially influenced*, we are *error-prone*, we are *purposive*, and we *learn*. In addition, people possess *agency*--we have the capacity to act (p. 46).^[Page, S. E. (2018). The model thinker. Basic Books.]
 
 ## Methods in People Analytics
 ```{r echo=FALSE}
