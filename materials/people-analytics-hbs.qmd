@@ -1,0 +1,30 @@
+---
+title: "People Analytics"
+format: 
+  revealjs:
+    theme: [default, theme.scss] 
+    css: style.css
+---
+
+## What is People Analytics?
+
+Anyone have their own definition? Art? 
+
+## Workforce Analytics == People Analytics?
+
+Workforce analytics is the discovery, interpretation, and communication of meaningful patterns in workforce-related data to inform decision making and improve performance. 
+
+## People Analytics and Measurement at McKinsey 
+
+## Common Components of a People Analytics Group
+
+* People Data Team (DE Pod for PAM)
+* PA Products Team (Dev Pod for PAM)
+* PA Insights Team (Translator Pod for PAM)
+* Advanced Analytics & Data Science (Data science & ML Pods for PAM)
+
+## Advanced Analytics and Data Science in People Analytics 
+
+* The importance of measurement. 
+* The limits of statistical models in People Analytics and the role of theory. 
+* The importance of ethical AI (ethical risk mitigation)
