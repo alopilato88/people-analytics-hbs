@@ -370,6 +370,10 @@
 <p>Behavioral Data Science is a new, emerging, interdisciplinary field, which combines techniques from the behavioral sciences, such as psychology, economics, sociology, and business, with computational approaches from computer science, statistics, data-centric engineering, information systems research and mathematics, all in order to better model, understand and predict behavior.<sup>1</sup></p>
 </blockquote>
 <aside><ol class="aside-footnotes"><li id="fn3"><p>Pogrebna, G. (2020). What is behavioral data science and how to get into it. <em>Medium</em>. https://medium.com/behavior-design-hub/what-is-behavioral-data-science-and-how-to-get-into-it-e389ed20751f</p></li></ol></aside></section>
+<section id="methods-in-people-analytics" class="slide level2">
+<h2>Methods in People Analytics</h2>
+
+<img data-src="people-analytics-hbs_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
 <section id="three-important-behavioral-data-science-topics" class="slide level2">
 <h2>Three Important Behavioral Data Science Topics</h2>
 <p>It’s important to consider the following three (broad) topics whenever you start a new project:</p>
@@ -616,6 +620,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

@@ -36,6 +36,96 @@ Anyone have their own definition? Art?
 
 >Behavioral Data Science is a new, emerging, interdisciplinary field, which combines techniques from the behavioral sciences, such as psychology, economics, sociology, and business, with computational approaches from computer science, statistics, data-centric engineering, information systems research and mathematics, all in order to better model, understand and predict behavior.^[Pogrebna, G. (2020). What is behavioral data science and how to get into it. *Medium*. https://medium.com/behavior-design-hub/what-is-behavioral-data-science-and-how-to-get-into-it-e389ed20751f]
 
+## Methods in People Analytics
+```{r echo=FALSE}
+library(dplyr)
+library(ggplot2)
+library(ggrepel)
+library(tibble)
+
+n_lm <- 30
+jitter_seed <- 100
+
+df <- tibble::tibble(
+  METHOD = c(
+    "Linear Regression",
+    "Logistic Regression",
+    "Poisson Regression",
+    "Generalized Linear Models",
+    "Generalized Linear Mixed-Effects Models",
+    "Survival Regression Models",
+    "Decision Trees",
+    "Random Forests",
+    "Deep Learning Models",
+    "Topic Models (NLP)",
+    "Network Analysis",
+    "Confirmatory Factor Analysis",
+    "Clustering Methods",
+    "Exploratory Factor Analysis"
+  ),
+  # 1 - Very easily explained
+  # 2 - Somewhat easily explained
+  # 3 - Moderately difficult to explain
+  # 4 - Hard to explain
+  # 5 - Good luck
+  EXPLAINABLE = c(
+    1, 2, 2, 2,
+    3, 3, 1, 4,
+    5, 4, 3, 3, 
+    3, 3
+  ),
+  MODEL_OVERSIGHT = c(
+    1, 1, 1, 1,
+    2, 2, 2, 3,
+    3, 3, 2, 2, 
+    3, 3
+  ),
+  SAMPLE = c(
+    n_lm, 5*n_lm, 5*n_lm, 5*n_lm,
+    10*n_lm, 8*n_lm, 10*n_lm, 50*n_lm,
+    75*n_lm, 75*n_lm, 20*n_lm, 10*n_lm, 
+    10*n_lm, 10*n_lm
+  ),
+  ML_CLASS = c(
+    rep("Supervised", 9), "Mixed", "Mixed", "Supervised", "Unsupervised",
+    "Unsupervised"
+  )
+)
+
+ggplot2::ggplot(
+  data = df,
+  ggplot2::aes(
+    x = MODEL_OVERSIGHT,
+    y = EXPLAINABLE,
+    color = ML_CLASS,
+    size = SAMPLE
+  )
+) +
+  ggplot2::theme_minimal() +
+  ggplot2::geom_point(position = position_jitter(seed = jitter_seed)) +
+  ggplot2::scale_size(guide = "none") +
+  ggplot2::labs(
+    x = "Technical Cost of the Model (Modeler Time + Estimation Time)",
+    y = "Difficulty Communicating Results",
+    color = "Type of ML Model"
+  ) +
+  ggrepel::geom_label_repel(aes(label = METHOD, x = MODEL_OVERSIGHT, y = EXPLAINABLE,
+                                color = ML_CLASS),
+                            box.padding   = 0.35, 
+                            point.padding = 0.5,
+                            segment.color = 'grey50',
+                            inherit.aes = FALSE,
+                            position = position_jitter(seed = jitter_seed)) +
+  ggplot2::scale_x_continuous(
+    labels = c("Cheap", "Expensive"),
+    breaks = c(1, 3)
+  ) +
+  ggplot2::scale_y_continuous(
+    labels = c("Easy", "Moderate" ,"Hard"),
+    breaks = c(1.25, 3.125, 5)
+    )
+```
+
 ## Three Important Behavioral Data Science Topics
 
 It's important to consider the following three (broad) topics whenever you start a new project: 
