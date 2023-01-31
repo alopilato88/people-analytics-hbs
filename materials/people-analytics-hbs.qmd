@@ -16,6 +16,15 @@ Workforce analytics is the discovery, interpretation, and communication of meani
 
 ## People Analytics and Measurement at McKinsey 
 
+* We are a multi-team system grouped into functional pods (subteams): 
+
+- BI Personnel Pod
+- BI Recruiting Pod
+- Data Engineering Pod
+- Data Science Pod
+- Dev & ML Ops Pod
+- Translator Pod
+
 ## Common Components of a People Analytics Group
 
 * People Data Team (DE Pod for PAM)
@@ -25,6 +34,23 @@ Workforce analytics is the discovery, interpretation, and communication of meani
 
 ## Advanced Analytics and Data Science in People Analytics 
 
+## Three things to keep in mind 
+
 * The importance of measurement. 
-* The limits of statistical models in People Analytics and the role of theory. 
-* The importance of ethical AI (ethical risk mitigation)
+* The limits of statistical models and the role of theory. 
+* The importance of ethical AI (ethical risk mitigation).
+
+## Use Case 1: Selection System Development
+
+You're a manager of a People Analytics team at a large software engineering firm and your team has been tasked with overhauling the systems in place to select their entry-level software engineer role. You've been given the following three goals: 
+
+1. Hire employees who will be top performers
+2. Increase the diversity of the organization's hires
+3. Reduce selection costs
+
+## Use Case 2: Retention Analytics
+
+Your team has been tasked with understanding why the organizaiton is experiencing such high turnover among its entry-level software engineers. You've been given the following goals: 
+
+1. Understand what is driving entry-level software engineer attrition
+2. 
