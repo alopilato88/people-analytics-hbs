@@ -128,7 +128,7 @@ ggplot2::ggplot(
     )
 ```
 
-## Three Important Behavioral Data Science Topics
+## Topics to Consider when Modeling People Data
 
 It's important to consider the following three (broad) topics whenever you start a new project: 
 
