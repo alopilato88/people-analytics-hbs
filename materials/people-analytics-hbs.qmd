@@ -1,5 +1,6 @@
 ---
 title: "People Analytics"
+subtitle: "A Conversation"
 format: 
   revealjs:
     theme: [default, theme.scss] 
@@ -10,31 +11,34 @@ format:
 
 Anyone have their own definition? Art? 
 
-## Workforce Analytics == People Analytics?
+## People Analytics == Workforce Analytics?
 
-Workforce analytics is the discovery, interpretation, and communication of meaningful patterns in workforce-related data to inform decision making and improve performance. 
+>Workforce analytics is the discovery, interpretation, and communication of meaningful patterns in workforce-related data to inform decision making and improve performance.^[Guenole, N., Ferrar, J., & Feinzig, S. (2017). The power of people: Learn how successful organizations use workforce analytics to improve business performance. Pearson Education, Inc.]
 
 ## People Analytics and Measurement at McKinsey 
 
-* We are a multi-team system grouped into functional pods (subteams): 
-
-- BI Personnel Pod
-- BI Recruiting Pod
-- Data Engineering Pod
-- Data Science Pod
-- Dev & ML Ops Pod
-- Translator Pod
+* We are a multi-team system grouped into functional pods: 
+  + BI Personnel Pod
+  + BI Recruiting Pod
+  + Data Engineering Pod
+  + Data Science Pod [Alex's Pod]
+  + Dev & ML Ops Pod
+  + Translator Pod [Art's Pod]
 
 ## Common Components of a People Analytics Group
 
 * People Data Team (DE Pod for PAM)
 * PA Products Team (Dev Pod for PAM)
 * PA Insights Team (Translator Pod for PAM)
-* Advanced Analytics & Data Science (Data science & ML Pods for PAM)
+* Advanced Analytics & Data Science (Data science & ML Pods for PAM)^[Garbis, N. (2022). Blueprint for building a people analytics team [White paper]. One Model. https://www.onemodel.co/whitepapers/blueprint-pa-team]
 
-## Advanced Analytics and Data Science in People Analytics 
+## Data Science + People Analytics = Behavioral Data Science
 
-## Three things to keep in mind 
+>Behavioral Data Science is a new, emerging, interdisciplinary field, which combines techniques from the behavioral sciences, such as psychology, economics, sociology, and business, with computational approaches from computer science, statistics, data-centric engineering, information systems research and mathematics, all in order to better model, understand and predict behavior.^[Pogrebna, G. (2020). What is behavioral data science and how to get into it. *Medium*. https://medium.com/behavior-design-hub/what-is-behavioral-data-science-and-how-to-get-into-it-e389ed20751f]
+
+## Three Important Behavioral Data Science Topics
+
+It's important to consider the following three (broad) topics whenever you start a new project: 
 
 * The importance of measurement. 
 * The limits of statistical models and the role of theory. 
@@ -50,7 +54,10 @@ You're a manager of a People Analytics team at a large software engineering firm
 
 ## Use Case 2: Retention Analytics
 
-Your team has been tasked with understanding why the organizaiton is experiencing such high turnover among its entry-level software engineers. You've been given the following goals: 
+Your team has been tasked with understanding why the organization is experiencing such high turnover among its entry-level software engineers. You've been given the following goals: 
 
-1. Understand what is driving entry-level software engineer attrition
-2. 
+1. Discover the factors driving entry-level software engineer attrition
+2. Provide recommendations for interventions to improve retention
+3. Estimate the financial impact of attrition
+
+# Thanks!
